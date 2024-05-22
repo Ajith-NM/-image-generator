@@ -1,0 +1,18 @@
+<section>
+  <header>
+    <h1>Ai Image Generator</h1>
+
+  </header>
+  <div class="body">
+    <div class="image">
+      <img [src]="image_url" alt="">
+    </div>
+    @if(image_url!='assets/images/img.jpg'){
+    <div class="download" ><span><i class='bx bxs-download'></i></span><a [href]="image_url" download>Download</a></div>
+    }
+  </div>
+  <div class="prompt">
+    <input type="text" placeholder="enter your thoughts here" [(ngModel)]="description">
+    <button (click)="generate()">Generate</button>
+  </div>
+</section>

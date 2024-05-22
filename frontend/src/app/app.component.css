@@ -1,0 +1,109 @@
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:4%;
+    width: 100%;
+    height: 100vh;
+    background-color: #0f1b21;
+    position: relative;
+}
+
+header h1 {
+    font-size:clamp(30px,5vw,50px);
+    color: transparent;
+    font-weight: 400;
+    cursor: pointer;
+    background: linear-gradient(90deg, #00ffd0, #ff00c3);
+    background-clip: text;
+
+}
+
+.image {
+    width: 500px;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.download{
+    background: linear-gradient(90deg, #00ff99, #ff00c3);
+    background-clip: text;
+    text-transform: capitalize;
+    font-size: 20px;
+    color:transparent;
+    margin-top: 10px;
+    width: 138px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius:0px 10px 10px 10px;
+    border: 2px solid aliceblue;
+}
+.download a{
+    text-decoration: none;
+    color: transparent;
+}
+.prompt {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.prompt input {
+    background: transparent;
+    color: aliceblue;
+width: 450px;
+    outline: none;
+
+}
+
+.prompt input::content {
+    padding: 15px;
+}
+.prompt button{
+    width: 100px;
+    height: 100%;
+  /* border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px; */
+    background: linear-gradient(90deg, #00ffd0, #ff00c3);
+    background-clip: text;
+    text-transform: capitalize;
+    color:transparent;
+    font-size: 20px;
+
+}
+@media (max-width:580px){
+    .prompt {
+        margin-top: 30px;
+        width: 350px;
+    }
+    .image {
+        width: 340px;
+        height: 340px;
+        margin-top: 30px;        
+    }
+    .prompt button{
+        width: 27%;
+        font-size: 17px;
+    
+    }
+    .prompt input {
+    width: 71%;
+    }
+}
